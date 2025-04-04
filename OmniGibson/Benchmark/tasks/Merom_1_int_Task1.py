@@ -9,14 +9,14 @@ cfg["render"] = {
   "viewer_height": 720
 }
 
-
+import os
 cfg["scene"] = {
   # "type": "Scene",
   # "floor_plane_visible": True
   
   "type": "InteractiveTraversableScene",
   "scene_model": "Merom_1_int",
-  "scene_file": "/home/pjlab/liukehui/COHERENT-OmniGibson/Benchmark/tasks/Merom_1_int_best.json",
+  "scene_file": f"{os.environ.get('COHERENT_PATH')}/OmniGibson/Benchmark/tasks/Merom_1_int_best.json",
   "floor_plane_visible": True
 }
 

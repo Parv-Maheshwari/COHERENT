@@ -25,3 +25,5 @@ docs/apidoc
 
 # vscode
 .vscode/
+**/OmniGibson/Benchmark/assets/**
+**/OmniGibson/omnigibson/data/**

@@ -4,6 +4,9 @@ sys.path.append("/home/pjlab/.local/share/ov/pkg/isaac_sim-2022.2.0/exts/omni.is
 
 import numpy as np
 import os
+from omni.isaac.core.utils.extensions import enable_extension
+enable_extension("omni.isaac.proximity_sensor")
+enable_extension("omni.isaac.quadrotor")
 from omni.isaac.quadrotor.crazyflie import Crazyflie
 from omni.isaac.core.objects import DynamicCuboid, FixedCuboid
 from omni.isaac.core.utils.stage import open_stage, add_reference_to_stage
